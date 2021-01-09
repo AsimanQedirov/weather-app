@@ -1,0 +1,114 @@
+body{
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s ease-in-out;
+}
+.absolute-div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.icon-div{
+    margin: auto;
+    background: rgba(255, 255, 255, 0.775);
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 2rem 0rem;
+    text-align: center;
+    backdrop-filter: blur(18px);
+}
+.icon-div .cancel{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(80, 69, 69);
+    cursor: pointer;
+}
+.addremove{
+    animation: available 0.9s 1;
+}
+.absolute-div i{
+    font-size: 4rem;
+}
+@keyframes available{
+    0%{
+        transform: scale(1.4);
+    }
+    25%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    75%{
+        transform: scale(1);
+    }
+}
+#flag{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.icons{
+    color: rgb(68, 68, 68);
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 1px solid rgb(221, 220, 220);
+}
+select{
+    padding: 10px;
+    width: 100%;
+    border: none !important;
+    cursor: pointer;
+}
+form>button{
+    border-radius: 0px !important;
+    outline: 1px solid #dc3545;
+}
+select:focus{
+    border-color: rgb(133, 133, 238);
+}
+
+.icons>i{
+    font-size: 40px !important;
+}
+.card{
+    background: transparent;
+    background-color: rgba(255, 255, 255, 0.302);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+}
+
+.country_name{
+    font-size: 50px;
+    color: #21e2cf;
+    font-weight: 300;
+}
+.country_name_1{
+    color: rgb(228, 228, 228);
+    font-size: 40px;
+    font-weight: 400;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+    color: coral;
+    font-size: 100px;
+}
